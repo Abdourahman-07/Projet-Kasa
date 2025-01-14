@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  margin: 0px 60px 40px 60px;
+}
+
+.box-cards {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin: 40px 0px 20px 0px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}/*# sourceMappingURL=other.css.map */

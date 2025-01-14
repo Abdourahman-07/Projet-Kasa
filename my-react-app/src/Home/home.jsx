@@ -1,10 +1,19 @@
-import { Link } from "react-router-dom";
+import cards from "../../data.json";
+import Banner from "./banner";
+import Cards from "./Cards";
 
-export function Home() {
+function Home() {
   return (
-    <div>
-      <div>Hoooome</div>
-      <Link to={"/sheet"}>Fiche produit</Link>
-    </div>
+    <main>
+      <Banner />
+      <section className="box-cards">
+        {Object.keys(cards).map((index) => {
+          const card = cards[index];
+          return <Cards key={card.id} title={card.title} cover={card.cover} />;
+        })}
+      </section>
+    </main>
   );
 }
+
+export default Home;

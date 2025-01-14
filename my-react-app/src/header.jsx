@@ -1,12 +1,23 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-export function Header() {
+const StyledLink = styled(Link)`
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: 500;
+`;
+
+function Header() {
   return (
     <header>
+      <img src="src/assets/logo.png" alt="Logo de l'agence" />
       <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A propos</Link>
+        <StyledLink to="/">Accueil</StyledLink>
+        <StyledLink to="/about">A Propos</StyledLink>
       </nav>
     </header>
   );
 }
+
+export default Header;

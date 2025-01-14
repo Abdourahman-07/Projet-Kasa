@@ -1,0 +1,16 @@
+.banner {
+  background: rgba(0, 0, 0, 0.6) url("../imghome.png");
+  background-size: cover;
+  background-blend-mode: darken;
+  color: white;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2509803922);
+  margin-bottom: 10px;
+}/*# sourceMappingURL=banner.css.map */

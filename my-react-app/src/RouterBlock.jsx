@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Header } from "./header";
-import { Home } from "./Home/home";
-import { About } from "./About/about";
-import { Sheet } from "./Sheet/sheet";
-import { Error404 } from "./Error404/error404";
+import Header from "./header";
+import Home from "./Home/home";
+import About from "./About/about";
+import Sheet from "./Sheet/sheet";
+import Error404 from "./Error404/Error404";
 
-export function RouterBlock() {
+function RouterBlock() {
   return (
     <Router>
       <Header />
@@ -18,3 +18,5 @@ export function RouterBlock() {
     </Router>
   );
 }
+
+export default RouterBlock;
