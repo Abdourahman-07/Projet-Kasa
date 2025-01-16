@@ -1,8 +1,16 @@
-.banner {
+.banner-home {
   background: rgba(0, 0, 0, 0.6) url("../imghome.png");
+}
+
+.banner-about {
+  background: rgba(0, 0, 0, 0.6) url("../imgabout.png");
+}
+
+.banner {
   background-size: cover;
   background-blend-mode: darken;
   color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2509803922);
   height: 220px;
   width: 100%;
   display: flex;
@@ -13,4 +21,4 @@
   font-size: 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2509803922);
   margin-bottom: 10px;
-}/*# sourceMappingURL=banner.css.map */
+}/*# sourceMappingURL=Banner.css.map */

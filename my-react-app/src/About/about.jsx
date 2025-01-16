@@ -1,5 +1,11 @@
+import Banner from "./Banner";
+
 function About() {
-  return <div>A propos de nous et puis nous</div>;
+  return (
+    <main>
+      <Banner />
+    </main>
+  );
 }
 
 export default About;

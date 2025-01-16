@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const StyledDiv = styled.div`
+const StyledCard = styled(Link)`
   background: url(${(props) => props.$cover});
   background-size: cover;
   background-position: center;
@@ -9,9 +10,9 @@ const StyledDiv = styled.div`
 
 function Cards({ title, cover }) {
   return (
-    <StyledDiv className="card" $cover={cover}>
+    <StyledCard className="card" $cover={cover} to="/sheet">
       <h2>{title}</h2>
-    </StyledDiv>
+    </StyledCard>
   );
 }
 
