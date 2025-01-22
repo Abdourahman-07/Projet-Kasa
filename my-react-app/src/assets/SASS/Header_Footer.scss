@@ -12,6 +12,10 @@ header {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -30,6 +34,15 @@ footer {
     a {
       font-size: 15px;
       padding: 7px !important;
+    }
+  }
+  footer {
+    height: 200px;
+    img {
+      width: 150px;
+    }
+    p {
+      width: 50%;
     }
   }
 }

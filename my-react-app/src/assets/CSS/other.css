@@ -32,7 +32,7 @@ main {
 
 @media all and (max-width: 600px) {
   main {
-    margin: 10px 15px 160px 15px;
+    margin: 10px 15px 250px 15px;
   }
   .box-cards {
     background-color: white;

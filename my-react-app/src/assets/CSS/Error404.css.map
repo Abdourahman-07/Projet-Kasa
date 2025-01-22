@@ -1,1 +1,1 @@
-{"version":3,"sources":["../SASS/Error404.scss","Error404.css","../SASS/colors.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;ACDF;ADEE;EACE,gBAAA;EACA,WAAA;EACA,cETY;ADShB;ADEE;EACE,eAAA;EACA,cEbY;ADahB","file":"Error404.css"}
+{"version":3,"sources":["../SASS/Error404.scss","Error404.css","../SASS/colors.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;ACDF;ADEE;EACE,gBAAA;EACA,WAAA;EACA,cEVY;ADUhB;ADEE;EACE,eAAA;EACA,cEdY;ADchB;;ADIA;EAEI;IACE,YAAA;IACA,gBAAA;ECFJ;EDIE;IACE,eAAA;ECFJ;AACF","file":"Error404.css"}

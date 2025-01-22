@@ -10,6 +10,10 @@ header nav .active {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -29,5 +33,14 @@ footer {
   header a {
     font-size: 15px;
     padding: 7px !important;
+  }
+  footer {
+    height: 200px;
+  }
+  footer img {
+    width: 150px;
+  }
+  footer p {
+    width: 50%;
   }
 }/*# sourceMappingURL=Header_Footer.css.map */

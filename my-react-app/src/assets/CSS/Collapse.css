@@ -7,7 +7,7 @@
   transition: max-height 500ms;
 }
 .collapse:has(.active-content) {
-  max-height: 200px;
+  max-height: 250px;
 }
 .collapse:has(.active-content) .active-content p {
   bottom: 0px;
@@ -46,4 +46,16 @@
   position: relative;
   bottom: 100px;
   margin: 0px;
+}
+
+@media all and (max-width: 600px) {
+  .collapse {
+    width: 100%;
+  }
+  .collapse:has(.active-content) {
+    max-height: 350px;
+  }
+  .collapse .content-box p {
+    bottom: 300px;
+  }
 }/*# sourceMappingURL=Collapse.css.map */
