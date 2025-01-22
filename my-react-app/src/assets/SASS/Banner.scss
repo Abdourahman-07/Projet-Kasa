@@ -1,14 +1,6 @@
-.banner-home {
-  background: rgba(0, 0, 0, 0.6) url("../imghome.png");
-}
-
-.banner-about {
-  background: rgba(0, 0, 0, 0.6) url("../imgabout.png");
-}
-
 .banner {
-  background-size: cover;
-  background-blend-mode: darken;
+  box-sizing: border-box;
+  padding: 20px;
   color: white;
   text-shadow: 0px 4px 4px #00000040;
   height: 220px;
@@ -20,5 +12,17 @@
   border-radius: 25px;
   font-size: 24px;
   box-shadow: 0px 4px 4px #00000040;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+@media all and (max-width: 600px) {
+  .banner {
+    text-align: left;
+    justify-content: flex-start;
+    height: 200px;
+    font-size: 15px;
+    h1 {
+      width: 80%;
+    }
+  }
 }

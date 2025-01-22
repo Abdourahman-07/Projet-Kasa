@@ -1,1 +1,49 @@
-/*# sourceMappingURL=Collapse.css.map */
+.collapse {
+  width: 75%;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  max-height: 60px;
+  transition: max-height 500ms;
+}
+.collapse:has(.active-content) {
+  max-height: 200px;
+}
+.collapse:has(.active-content) .active-content p {
+  bottom: 0px;
+}
+.collapse .title-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  height: 40px;
+  color: white;
+}
+.collapse .title-box h2 {
+  margin: 0px;
+}
+.collapse .title-box i {
+  font-size: 30px;
+  cursor: pointer;
+  transition: rotate 500ms;
+}
+.collapse .title-box .active {
+  rotate: -180deg;
+}
+.collapse .content-box {
+  position: relative;
+  z-index: -2;
+}
+.collapse .content-box p {
+  background-color: #f6f6f6;
+  padding: 10px;
+  z-index: -1;
+  transition: bottom 500ms;
+  position: relative;
+  bottom: 100px;
+  margin: 0px;
+}/*# sourceMappingURL=Collapse.css.map */

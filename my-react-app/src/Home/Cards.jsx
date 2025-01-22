@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const StyledCard = styled(Link)`
@@ -8,6 +7,10 @@ const StyledCard = styled(Link)`
   background-position: center;
 `;
 
+/**
+ * @param {string} title - titre du logement
+ * @param {string} cover - adresse web de l'image de fond
+ */
 function Cards({ title, cover }) {
   return (
     <StyledCard className="card" $cover={cover} to="/sheet">
@@ -15,10 +18,5 @@ function Cards({ title, cover }) {
     </StyledCard>
   );
 }
-
-Cards.propTypes = {
-  title: PropTypes.string.isRequired,
-  cover: PropTypes.string.isRequired,
-};
 
 export default Cards;

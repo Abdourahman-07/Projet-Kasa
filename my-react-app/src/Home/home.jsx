@@ -1,11 +1,15 @@
-import cards from "../../data.json";
-import Banner from "./banner";
+import cards from "../../logements.json";
+import Banner from "../Banner";
 import Cards from "./Cards";
+// c'est permis de mettre du texte en valeur de props sans passer par une variable ?
 
 function Home() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title={"Chez vous, partout et ailleurs"}
+        cover={"./src/assets/imghome.png"}
+      />
       <section className="box-cards">
         {Object.keys(cards).map((index) => {
           const card = cards[index];

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledLink = styled(Link)`
@@ -9,12 +10,29 @@ const StyledLink = styled(Link)`
 `;
 
 function Header() {
+  const location = useLocation();
+  const [currentPath, setCurrentPath] = useState(location.pathname);
+
+  useEffect(() => {
+    setCurrentPath(location.pathname);
+  }, [location]);
+
   return (
     <header>
       <img src="src/assets/logo.png" alt="Logo de l'agence" />
       <nav>
-        <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/about">A Propos</StyledLink>
+        <StyledLink
+          className={currentPath === "/" ? "active" : "no-active"}
+          to="/"
+        >
+          Accueil
+        </StyledLink>
+        <StyledLink
+          className={currentPath === "/about" ? "active" : "no-active"}
+          to="/about"
+        >
+          A Propos
+        </StyledLink>
       </nav>
     </header>
   );
