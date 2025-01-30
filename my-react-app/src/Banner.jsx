@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// L'utilisation de jsdoc est-elle correcte ?
 
 const StyledBanner = styled.div`
   background: rgba(0, 0, 0, 0.6) url(${(props) => props.$cover});

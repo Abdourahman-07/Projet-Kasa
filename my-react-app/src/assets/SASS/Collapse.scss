@@ -12,7 +12,7 @@
   &:has(.active-content) {
     max-height: 250px;
     .active-content {
-      p {
+      div {
         bottom: 0px;
       }
     }
@@ -47,7 +47,7 @@
     position: relative;
     z-index: -2;
 
-    p {
+    div {
       background-color: colors.$grey-color;
       padding: 10px;
       z-index: -1;
@@ -55,6 +55,9 @@
       position: relative;
       bottom: 100px;
       margin: 0px;
+      p {
+        margin: 0px;
+      }
     }
   }
 }
@@ -66,7 +69,7 @@
       max-height: 350px;
     }
     .content-box {
-      p {
+      div {
         bottom: 300px;
       }
     }

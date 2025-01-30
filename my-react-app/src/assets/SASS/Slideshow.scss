@@ -1,0 +1,25 @@
+.slide-show {
+  position: relative;
+  border-radius: 25px;
+  height: 400px;
+  width: 100%;
+  color: white;
+  .fa-solid {
+    position: absolute;
+    top: 37%;
+    font-size: 5em;
+  }
+  .fa-chevron-left {
+    left: 20px;
+  }
+  .fa-chevron-right {
+    right: 20px;
+  }
+  p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 20px;
+  }
+}

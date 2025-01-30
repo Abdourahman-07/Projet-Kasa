@@ -1,5 +1,10 @@
 import { useState } from "react";
 
+/**
+ *
+ * @param {string} title - titre de la collapse
+ * @param {string} description - description de la collapse
+ */
 function Collapse({ title, description }) {
   const [classIcone, setClassIcone] = useState("");
   const changeIcone = () => {
@@ -15,7 +20,7 @@ function Collapse({ title, description }) {
         ></i>
       </div>
       <div className={`content-box ${classIcone}-content`}>
-        <p>{description}</p>
+        <div>{description}</div>
       </div>
     </section>
   );

@@ -10,13 +10,19 @@ const StyledCard = styled(Link)`
 /**
  * @param {string} title - titre du logement
  * @param {string} cover - adresse web de l'image de fond
+ * @param {number} id - identifiant simple du logement
  */
-function Cards({ title, cover }) {
+function Cards({ title, cover, id }) {
   return (
-    <StyledCard className="card" $cover={cover} to="/sheet">
+    <StyledCard
+      id={`${id}`}
+      className={"card"}
+      $cover={cover}
+      to={`/sheet/${id}`}
+    >
       <h2>{title}</h2>
     </StyledCard>
   );
 }
 
-export default Cards;
+export { Cards };

@@ -1,0 +1,111 @@
+.description {
+  position: relative;
+  width: 100%;
+}
+.description .titles {
+  width: 70%;
+  font-weight: 500;
+}
+.description .titles h1 {
+  color: #ff6060;
+  font-size: 2em;
+  margin: 30px 0px 0px 0px;
+}
+.description .titles p {
+  margin: 0px;
+  font-size: 1.25em;
+}
+.description .host {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: absolute;
+  width: 200px;
+  top: 30px;
+  right: 0px;
+}
+.description .host p {
+  text-align: right;
+  color: #ff6060;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: 0px 15px 0px 0px;
+}
+.description .host img {
+  border-radius: 50%;
+  width: 70px;
+}
+.description .tags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 30px 0px 30px 0px;
+}
+.description .tags div {
+  margin: 5px;
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  min-width: 150px;
+  font-weight: 700;
+  color: white;
+  background-color: #ff6060;
+  border-radius: 10px;
+}
+.description .stars {
+  position: absolute;
+  top: 115px;
+  right: 0px;
+  font-size: 1.5em;
+}
+.description .stars i {
+  margin: 0px 5px 0px 5px;
+  color: #e3e3e3;
+}
+.description .stars .filled-star {
+  color: #ff6060;
+}
+.description .collapses {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.description .collapses .collapse {
+  margin: 0px;
+  width: 46%;
+}
+
+@media all and (max-width: 850px) {
+  .description .header-description {
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .description .header-description .titles {
+    width: 100%;
+  }
+  .description .header-description .host {
+    width: 45%;
+    top: auto;
+    bottom: 0px;
+  }
+  .description .header-description .host p {
+    font-size: 1em;
+  }
+  .description .header-description .host img {
+    width: 50px;
+  }
+  .description .header-description .stars {
+    font-size: 1em;
+    position: static;
+    margin-bottom: 5px;
+  }
+  .description .collapses {
+    flex-direction: column;
+  }
+  .description .collapses .collapse {
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+  }
+}/*# sourceMappingURL=Description.css.map */

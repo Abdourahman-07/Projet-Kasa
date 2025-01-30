@@ -1,0 +1,121 @@
+@use "colors.scss" as colors;
+
+.description {
+  position: relative;
+  width: 100%;
+  .titles {
+    width: 70%;
+    font-weight: 500;
+    h1 {
+      color: colors.$primary-color;
+      font-size: 2em;
+
+      margin: 30px 0px 0px 0px;
+    }
+    p {
+      margin: 0px;
+      font-size: 1.25em;
+    }
+  }
+
+  .host {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    right: 0px;
+    p {
+      text-align: right;
+      color: colors.$primary-color;
+      font-size: 1.25em;
+      font-weight: 500;
+      margin: 0px 15px 0px 0px;
+    }
+    img {
+      border-radius: 50%;
+      width: 70px;
+    }
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+    div {
+      margin: 5px;
+      padding: 0px 5px 0px 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      min-width: 150px;
+      font-weight: 700;
+      color: white;
+      background-color: colors.$primary-color;
+      border-radius: 10px;
+    }
+  }
+
+  .stars {
+    position: absolute;
+    top: 115px;
+    right: 0px;
+    font-size: 1.5em;
+    i {
+      margin: 0px 5px 0px 5px;
+      color: #e3e3e3;
+    }
+    .filled-star {
+      color: colors.$primary-color;
+    }
+  }
+
+  .collapses {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .collapse {
+      margin: 0px;
+      width: 46%;
+    }
+  }
+}
+
+@media all and (max-width: 850px) {
+  .description {
+    .header-description {
+      position: relative;
+      padding-bottom: 10px;
+      .titles {
+        width: 100%;
+      }
+      .host {
+        width: 45%;
+        top: auto;
+        bottom: 0px;
+        p {
+          font-size: 1em;
+        }
+        img {
+          width: 50px;
+        }
+      }
+      .stars {
+        font-size: 1em;
+        position: static;
+        margin-bottom: 5px;
+      }
+    }
+
+    .collapses {
+      flex-direction: column;
+      .collapse {
+        width: 100%;
+        margin: 15px 0px 15px 0px;
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./header";
-import Home from "./Home/home";
+import Home from "./Home/Home";
 import About from "./About/about";
-import Sheet from "./Sheet/sheet";
+import Sheet from "./Sheet/Sheet";
 import Error404 from "./Error404/Error404";
 
 function RouterBlock() {
@@ -12,7 +12,7 @@ function RouterBlock() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/sheet" element={<Sheet />} />
+        <Route path="/sheet/:idLogement" element={<Sheet />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
