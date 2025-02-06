@@ -27,7 +27,7 @@ const contentCollapses = [
 function About() {
   return (
     <main>
-      <Banner title={null} cover={"/./src/assets/imgabout.png"} />
+      <Banner title={null} cover={"/./public/images/imgabout.png"} />
       {contentCollapses.map((content, index) => (
         <Collapse
           key={`colAbout${index}`}

@@ -7,7 +7,7 @@ function Home() {
     <main>
       <Banner
         title={"Chez vous, partout et ailleurs"}
-        cover={"/./src/assets/imghome.png"}
+        cover={"/./public/images/imghome.png"}
       />
       <section className="box-cards">
         {Object.keys(cards).map((index) => {
