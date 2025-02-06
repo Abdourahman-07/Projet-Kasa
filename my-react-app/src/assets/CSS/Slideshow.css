@@ -9,6 +9,7 @@
   position: absolute;
   top: 37%;
   font-size: 5em;
+  cursor: pointer;
 }
 .slide-show .fa-chevron-left {
   left: 20px;

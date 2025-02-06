@@ -2,18 +2,11 @@
   width: 75%;
   margin: 10px;
   overflow: hidden;
-  position: relative;
-  max-height: 60px;
   transition: max-height 500ms;
-}
-.collapse:has(.active-content) {
-  max-height: 250px;
-}
-.collapse:has(.active-content) .active-content div {
-  bottom: 0px;
 }
 .collapse .title-box {
   position: relative;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,29 +29,17 @@
 }
 .collapse .content-box {
   position: relative;
-  z-index: -2;
+  z-index: 1;
+  transition: bottom 500ms;
 }
 .collapse .content-box div {
   background-color: #f6f6f6;
   padding: 10px;
-  z-index: -1;
-  transition: bottom 500ms;
-  position: relative;
-  bottom: 100px;
-  margin: 0px;
-}
-.collapse .content-box div p {
   margin: 0px;
 }
 
 @media all and (max-width: 600px) {
   .collapse {
     width: 100%;
-  }
-  .collapse:has(.active-content) {
-    max-height: 350px;
-  }
-  .collapse .content-box div {
-    bottom: 300px;
   }
 }/*# sourceMappingURL=Collapse.css.map */
