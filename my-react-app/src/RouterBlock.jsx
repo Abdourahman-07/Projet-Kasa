@@ -10,7 +10,6 @@ function RouterBlock() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/Projet-Kasa" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/sheet/:idLogement" element={<Sheet />} />
