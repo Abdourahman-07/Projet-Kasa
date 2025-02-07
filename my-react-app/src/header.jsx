@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <header>
-      <img src="/public/images/logo.png" alt="Logo de l'agence" />
+      <img src="/images/logo.png" alt="Logo de l'agence" />
       <nav>
         <StyledLink
           className={currentPath === "/" ? "active" : "no-active"}

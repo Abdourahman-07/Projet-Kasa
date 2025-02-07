@@ -24,3 +24,11 @@
     bottom: 20px;
   }
 }
+
+@media all and (max-width: 600px) {
+  .slide-show {
+    p {
+      display: none;
+    }
+  }
+}
