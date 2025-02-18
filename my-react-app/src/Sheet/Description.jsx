@@ -10,10 +10,6 @@ function Description({ logementData }) {
       stateStars.push("filled-star");
     }
 
-    function handleOpen(isOpen) {
-      console.log(`Etat de la collapse : ${isOpen}`);
-    }
-
     return (
       <section className="description">
         <div className="header-description">
@@ -45,14 +41,12 @@ function Description({ logementData }) {
           <Collapse
             title="Description"
             description={logementData.description}
-            handleOpen={handleOpen}
           />
           <Collapse
             title="Équipements"
             description={logementData.equipments.map((equipment, index) => (
               <p key={index}>{equipment}</p>
             ))}
-            handleOpen={handleOpen}
           />
         </div>
       </section>
