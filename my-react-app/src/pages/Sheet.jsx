@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import Slideshow from "./Slideshow";
+import Slideshow from "../components/Slideshow";
 import cards from "../../logements.json";
 import { useNavigate, useParams } from "react-router-dom";
-import Description from "./Description";
+import Description from "../components/Description";
 
 let backgrounds = [];
 for (let i = 0; i < cards.length; i++) {

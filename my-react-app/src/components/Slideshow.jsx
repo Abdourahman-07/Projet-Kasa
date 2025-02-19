@@ -6,7 +6,6 @@ const StyledSection = styled.section`
   background-size: cover;
   background-position: center;
 `;
-//
 
 /**
  * @param {array} backgrounds - tableau d'images pour l'arrière-plan de la fiche actuelle

@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
  * @param {string} title - titre de la collapse
  * @param {string} description - description de la collapse
  */
-function Collapse({ title, description, handleOpen }) {
+function Collapse({ title, description }) {
   const [isActive, setIsActive] = useState(false);
   const contentRef = useRef(null);
   const [maxHeight, setMaxHeight] = useState("60px");
@@ -22,7 +22,6 @@ function Collapse({ title, description, handleOpen }) {
 
   const toggleCollapse = () => {
     setIsActive(!isActive);
-    handleOpen(!isActive);
   };
 
   return (

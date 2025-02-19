@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./header";
-import Home from "./Home/Home";
-import About from "./About/about";
-import Sheet from "./Sheet/Sheet";
-import Error404 from "./Error404/Error404";
+import Header from "../components/Header";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Sheet from "../pages/Sheet";
+import Error404 from "../pages/Error404";
 
 function RouterBlock() {
   return (

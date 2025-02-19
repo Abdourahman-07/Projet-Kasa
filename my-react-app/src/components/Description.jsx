@@ -1,4 +1,4 @@
-import Collapse from "../Collapse";
+import Collapse from "./Collapse";
 
 /**
  * @param {object} logementData - objet regroupant toutes les caractéristiques du logement

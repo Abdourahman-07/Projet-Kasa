@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledCard = styled(Link)`
-  background: url(${(props) => props.$cover});
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(${(props) => props.$cover});
   background-size: cover;
   background-position: center;
 `;

@@ -1,6 +1,6 @@
 import cards from "../../logements.json";
-import Banner from "../Banner";
-import { Cards } from "./Cards";
+import Banner from "../components/Banner";
+import { Cards } from "../components/Cards";
 
 function Home() {
   return (
